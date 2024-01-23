@@ -72,7 +72,7 @@ header nav  ul {
 display: flex;
 align-items: center;
 gap: 1.875rem;
-flex-wrap: wrap;
+flex-wrap: nowrap;
     
 }
     header .auth a {
@@ -984,14 +984,17 @@ line-height: 150%; /* 27px */
 
 
 @media (max-width: 600px) {
+    .container{
+        width: calc( 100% - 16px);
+    }
     header nav  ul {
         display: none;
     }
     .longdescreption{
                 flex-direction: column;
-                gap: .625rem;
-                
-                
+                gap: 0.0625rem; 
+                align-items: center;
+                align-self: stretch;
     
             }
 
